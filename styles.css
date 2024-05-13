@@ -1,0 +1,192 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sa  ns-serif;
+    margin: 0;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+nav {
+    font-family: 'PT Serif';
+    overflow: auto;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    transition: background-color 0.5s ease;
+}
+nav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 64px;         
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+nav a:hover {   
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 4em;
+    padding-bottom: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+section img {
+    width: 30%;
+    height: auto;
+}
+section div {
+    width: 70%;
+    padding-left: 5%;
+    padding-right: 5%
+}
+section div div {
+    margin-top: 1em;
+}
+.description {
+    position: relative;
+    top: -20px;
+}
+section#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+h2 {
+    font-size: 32px;
+}
+.judul-section {
+    position: relative;
+    display: inline-block;
+}
+.judul-section:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px; /* Adjust the thickness of the line here */
+    width: 100%;
+    background-color: black; /* Adjust the color of the line here */
+    transition: background-color 0.5s ease;
+}
+.social-media-icons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4em;
+    
+}
+div a img {
+    width: 50%;
+    height: auto;
+}
+header {
+    position: relative;
+    text-align: center;
+}
+header i {
+    font-family: 'PT Serif';
+    position: absolute;
+    top: 65%;    
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust the color of the text here */
+    font-size: 32px; /* Adjust the size of the text here */
+}
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+footer {
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.5s ease;
+}
+footer p {
+    font-size: 32px;
+    text-align: center;
+    transition: color 0.5s ease;
+}
+#header-desc {
+    position: absolute;
+    font-size: 16px;
+    top: 260px;
+}
+#graphNode {
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    width: 10%;
+    height: auto;
+}
+
+.sekolah {
+    font-size: large;
+}
+
+section#experience {
+    top:100px;
+}
+ul {
+    direction: rtl;
+    text-align: left;
+}
+#kanan {
+    text-align: right;
+    direction: rtl;
+    list-style-type: none;
+}
+li {
+    direction: ltr;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: #ddd;
+}
+
+body.dark-mode nav {
+    background-color: #333;
+}
+
+body.dark-mode nav a {
+    color: #ddd;
+}
+
+body.dark-mode nav a:hover {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode footer {
+    background-color: #333;
+    color: #ddd;
+}
+
+body.dark-mode .judul-section:after {
+    background-color: #ddd;
+}
+
+#toggleButton {
+    cursor: pointer;
+}
+
+#experience th {
+    text-align: center;
+}
